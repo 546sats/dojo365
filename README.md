@@ -29,14 +29,7 @@ A Telegram bot that sends daily philosophy quotes for deep reflection and focus.
 3. Choose a name and username for your bot
 4. Save the bot token you receive
 
-### 2. Get Your Chat ID
-
-1. Start a conversation with your bot
-2. Send any message to your bot
-3. Visit: `https://api.telegram.org/bot<YOUR_BOT_TOKEN>/getUpdates`
-4. Find your chat ID in the response
-
-### 3. Setup Environment
+### 2. Setup Environment
 
 1. Clone this repository:
    ```bash
@@ -52,18 +45,15 @@ A Telegram bot that sends daily philosophy quotes for deep reflection and focus.
 3. Edit `.env` with your configuration:
    ```env
    TELEGRAM_BOT_TOKEN=your_bot_token_here
-   TELEGRAM_CHAT_ID=your_chat_id_here
-   QUOTE_TIME=06:00
-   TIMEZONE=UTC
    ```
 
-### 4. Install Dependencies
+### 3. Install Dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### 5. Run the Bot
+### 4. Run the Bot
 
 ```bash
 python dojo365.py
@@ -84,8 +74,7 @@ python dojo365.py
 | Variable | Description | Default |
 |----------|-------------|---------|
 | `TELEGRAM_BOT_TOKEN` | Your bot token from BotFather | Required |
-| `TELEGRAM_CHAT_ID` | Your Telegram chat ID | Required |
-| `QUOTE_TIME` | Daily quote time (24h format) | `06:00` |
+| `QUOTE_TIME` | Daily quote time (24h format | `06:00` |
 | `TIMEZONE` | Timezone for scheduling | `UTC` |
 
 ### Customizing Quote Time
